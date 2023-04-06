@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #e1e1e6;
+  color: rgba(255, 255, 255, 0.8);
   background-color: #121214;
 
   font-synthesis: none;
@@ -33,9 +33,43 @@ body {
 
 body,
 #root {
-  max-width: 128rem;
   min-width: 32rem;
   min-height: 100vh;
 
   font-size: 1.6rem;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+input {
+  background-color: #121214;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  width: 100%;
+  max-width: 38rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
 }
