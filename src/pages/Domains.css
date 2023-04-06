@@ -1,0 +1,51 @@
+.domain-wrapper {
+  max-width: 76rem;
+  margin: 0 auto;
+}
+
+.domain-wrapper .form-container {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+.domain-wrapper .form-container p {
+  font-size: 1.4rem;
+}
+.domain-table {
+  width: 100%;
+  text-align: left;
+  background-color: #272727;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-collapse: collapse;
+}
+
+.domain-table th,
+.domain-table td {
+  padding: 1rem 2rem;
+}
+
+.domain-table .action {
+  text-align: right;
+}
+
+.domain-wrapper input {
+  background-color: #272727;
+}
+.domain-wrapper input::placeholder {
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.domain-wrapper input:hover::placeholder,
+.domain-wrapper input:focus::placeholder {
+  color: var(--primary-color);
+}
+.domain-wrapper .first-col {
+  width: 5rem;
+}
