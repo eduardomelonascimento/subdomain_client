@@ -12,3 +12,16 @@ export function login(username, password) {
     },
   };
 }
+
+export function logout() {
+  return {
+    url: apiURL + "/logout",
+    options: {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "access-token": localStorage.getItem("access-token"),
+      },
+    },
+  };
+}
