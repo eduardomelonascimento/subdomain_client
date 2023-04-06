@@ -1,10 +1,8 @@
-import React from "react";
-
-function Domain(id, url, handleClick) {
+export default function Domain({id, url, handleClick}) {
   return (
     <>
-      <tr key={id}>
-        <td>{id}</td>
+      <tr>
+        <td className="first-col">{id}</td>
         <td>
           <a href={url} target="_blank">
             {url}
@@ -19,5 +17,3 @@ function Domain(id, url, handleClick) {
     </>
   );
 }
-
-export default Domain;

@@ -5,6 +5,7 @@ import "./Domains.css";
 import useFetch from "../hooks/useFetch";
 import { getDomains, removeDomain } from "../services/domain";
 import SearchDomain from "../components/SearchDomain";
+import Domain from "../components/Domain";
 
 function Domains() {
   const [domains, setDomains] = useState([]);
@@ -30,7 +31,7 @@ function Domains() {
     <>
       <Navbar />
       <div className="domain-wrapper">
-        <SearchDomain handleDomains={handleDomains}/>
+        <SearchDomain handleDomains={handleDomains} />
         <table className="domain-table">
           <thead>
             <tr>
@@ -41,22 +42,12 @@ function Domains() {
           </thead>
           <tbody>
             {domains?.map(({ id_domain, url_domain }) => (
-              <tr key={id_domain}>
-                <td className="first-col">{id_domain}</td>
-                <td>
-                  <a href={url_domain} target="_blank">
-                    {url_domain}
-                  </a>
-                </td>
-                <td className="action">
-                  <button
-                    title="Remover Domínio"
-                    onClick={() => handleDelete(id_domain)}
-                  >
-                    &#10005;
-                  </button>
-                </td>
-              </tr>
+              <Domain
+                key={id_domain}
+                id={id_domain}
+                url={url_domain}
+                handleClick={handleDelete}
+              />
             ))}
           </tbody>
         </table>
