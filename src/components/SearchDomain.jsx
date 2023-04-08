@@ -2,7 +2,7 @@ import { addDomain } from "../services/domain";
 import useFetch from "../hooks/useFetch";
 import { useState } from "react";
 
-function SearchDomain(handleDomains) {
+function SearchDomain({ handleDomains }) {
   const [domainSearch, setDomainSearch] = useState("");
   const { request, error } = useFetch();
 
@@ -11,7 +11,7 @@ function SearchDomain(handleDomains) {
     const { url, options } = addDomain(domainSearch);
     const { response } = await request(url, options);
     if (response.ok) {
-      handleDomains();
+      await handleDomains();
       setDomainSearch("");
     }
   }
