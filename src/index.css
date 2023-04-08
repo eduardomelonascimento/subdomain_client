@@ -29,6 +29,8 @@
 
 body {
   background-image: url(./assets/blur.png);
+  background-size: cover;
+  padding-bottom: 2rem;
 }
 
 body,
@@ -72,4 +74,10 @@ input {
 }
 input::placeholder {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
