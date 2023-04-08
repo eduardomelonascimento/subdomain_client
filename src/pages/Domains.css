@@ -49,3 +49,40 @@
 .domain-wrapper .first-col {
   width: 5rem;
 }
+.domain-wrapper a {
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.domain-wrapper a:hover {
+  color: var(--primary-color);
+}
+.boxcel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  gap: 1.2rem;
+}
+.boxcel img,
+.boxcel button {
+  display: block;
+  height: 100%;
+}
+.boxcel img {
+  margin-top: 1px;
+}
+.boxcel img:hover {
+  cursor: pointer;
+}
+.boxcel button {
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.boxcel button:hover {
+  color: tomato;
+}
