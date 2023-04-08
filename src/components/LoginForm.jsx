@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import { login } from "../services/user";
+import Logo from "../assets/1680871752541.png";
 
 function LoginForm() {
   const [username, setUsername] = useState("");
@@ -22,6 +23,7 @@ function LoginForm() {
   return (
     <>
       <form onSubmit={handleSubmit}>
+        <img src={Logo} />
         <label htmlFor="username" className="sr-only">
           Username:
         </label>
@@ -46,7 +48,7 @@ function LoginForm() {
         {loading ? (
           <span>Carregando...</span>
         ) : (
-          <button type="submit">Submit</button>
+          <button type="submit">Entrar</button>
         )}
         {error && <span>Nome de usuário ou senha inválidos</span>}
       </form>

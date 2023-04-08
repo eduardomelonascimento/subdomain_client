@@ -7,7 +7,7 @@
 
 .form-wrapper form {
   background-color: #272727;
-  padding: 2rem;
+  padding: 0 2rem 2rem;
   border: 1px solid var(--primary-color);
   margin-top: -15rem;
   border-radius: 5px;
@@ -16,6 +16,12 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   min-width: 280px;
+}
+
+.form-wrapper img {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
 }
 
 .form-wrapper button {
@@ -42,4 +48,3 @@
   width: 100%;
   text-align: center;
 }
-
