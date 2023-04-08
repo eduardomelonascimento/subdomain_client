@@ -21,7 +21,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="container">
-          <Link to={"/"}>SubdomainGetter</Link>
+          <Link to={"/domains"}>SubdomainGetter</Link>
           <button onClick={handleLogout}>Sair</button>
         </div>
       </nav>
